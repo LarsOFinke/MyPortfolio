@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block nav_header %}
+Projekte
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+
+    <h1>Interessiert, was ich bereits gemacht habe?</h1>
+
+    <div>
+        <a class="centered" href="https://github.com/LarsOFinke" target="_blank">
+            <img id="github" src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub Logo">
+        </a>
+    </div>
+
+    <br>
+
+    <div class="bordered">
+    
+        <div class="projects">
+            <a class="centered" href="https://github.com/LarsOFinke/ToDoList.git" target="_blank" title="GitHub - Source Code">To-Do-Listen</a>
+
+            <video class="float-right" controls>
+                <source src="{{ url_for('static', filename='videos/ToDoLists.mp4') }}" type="video/mp4">
+                Ihr Browser unterstützt kein .mp4!
+            </video>
+
+            <p>
+                Mein erstes richtiges Projekt stellt ein 
+                klassisches To-Do-Listen-Programm dar.
+                Erstellt wurde es mit Python und 
+                dem PyQt5-GUI mit einer SQLite3-Datenbankanbindung.
+            </p>
+
+        </div>
+
+        <br class="clearfix"><hr>
+
+        <div class="projects">
+            <a class="centered" href="https://github.com/LarsOFinke/ThroneAndLiberty_Group_Selecter.git" target="_blank" title="GitHub - Source Code">Throne and Liberty - Automatischer Gruppenersteller</a>
+
+            <video class="float-right" controls>
+                <source src="{{ url_for('static', filename='videos/TalGroupSelecter.mp4') }}" type="video/mp4">
+                Ihr Browser unterstützt kein .mp4!
+            </video>
+            
+            <p>
+                Entwickelt für meine Gilde in Throne and Liberty
+                dient dieses Programm dazu die Gruppeneinteilung
+                zu automatisieren, sodass - sofern möglich - mindestens
+                ein "Tank" und ein "Heal" in einer Gruppe sind und der
+                Rest mit "DPS" aufgefüllt wird.
+                Das Ganze wird mittels einer SQLite3-Datenbank verwaltet
+                und verwendet ein Python-Script zur Einteilung mit PyQt5-GUI.
+            </p>
+
+        </div>
+
+        <br class="clearfix"><hr>
+
+        <div class="projects">
+            <a class="centered" href="https://quizwebsite.duckdns.org/" target="_blank" title="Quiz Website hosted on duckdns.org">Quiz Website</a>
+
+            <p>
+                Mein letztes Projekt, was ich Ihnen vorstellen möchte,
+                ist eine Quiz-Website, welche ich ebenfalls selber erstellt habe und hoste.
+                Dies ist möglich, da ich einen "reverse Proxy" (NGINX-Server) verwende, 
+                um mehrere Webseiten auf einem Gerät zu hosten.
+            </p>
+
+            <p>
+                Dieses Projekt befindet sich aktuell noch im Ausbau, hierzu habe ich mich mit 
+                einem Umschulungskameraden zusammengefunden, welcher das Frontend übernehmen wird,
+                sodass ich mich auf den Ausbau des Backends konzentrieren kann.
+                Am Ende wird sie unserer Klasse als Vorbereitung für die IHK-Prüfung dienen.
+            </p>
+        </div>
+
+        <br class="clearfix"><hr>
+
+        <div>
+            <h2><u>Habe ich Sie überzeugt?</u></h2>
+            <h3>Sie können mich <a href="/contact">hier</a> direkt kontaktieren!</h3>
+        <div>
+
+    </div>
+
+</div>
+{% endblock %}
