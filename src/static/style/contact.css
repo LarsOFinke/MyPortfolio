@@ -6,7 +6,7 @@
 
 .col-50 input {
     margin: 0 0 0 4px;
-    width: 12ch;
+    width: 100%;
 }
 .col-50 label {
     font-weight: bold;
@@ -17,6 +17,18 @@
     justify-content: flex-end;
 }
 textarea {
-    width: 40ch;
+    width: 100%;
     height: 5rem;
+}
+
+@media (min-width: 768) {
+    textarea {
+        width: 50%;
+        height: 8rem;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
 }

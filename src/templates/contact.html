@@ -13,11 +13,9 @@ Kontakt
 
 {% block content %}
 
-<div class="container contact-form">
-
+<div class="wrapper centered bordered" id="contact-form">
     <h2>Kontaktieren Sie mich als eine Investition für die Zukunft Ihres Unternehmens!</h2>
 
-    
     {% with messages = get_flashed_messages() %}
         {% if messages %}
         <div class="flash-success">
@@ -29,95 +27,92 @@ Kontakt
         {% endif %}
     {% endwith %}
 
-    <div class="bordered">
-
-        <form method="POST">
-
-            <div class="btn-box">
-                <div>
-                    <label class="radio" for="Fr">Frau</label>
-                    <input type="radio" name="gender" id="Fr" value="Fr" required>
-                </div>
-                
-                <div>
-                    <label class="radio" for="Hr">Herr</label>
-                    <input type="radio" name="gender" id="Hr" value="Hr" required>
-                </div>
-                    
-                <div>
-                    <label class="radio" for="Nb">Divers</label>
-                    <input type="radio" name="gender" id="Nb" value="Nb" required>
-                </div>
+    <form method="POST">
+        <div class="btn-box">
+            <div>
+                <label for="Fr">Frau</label>
+                <input type="radio" name="gender" id="Fr" value="Fr" required>
             </div>
-
-            <br>
             
-            <div class="row">
-                <div class="col-50">
-                    <label for="firstName">Vorname:</label>
-                </div>
-                <div class="col-50">
-                    <input type="text" id="firstName" name="firstName" placeholder="Ihr Vorname" required>
-                </div>
+            <div>
+                <label for="Hr">Herr</label>
+                <input type="radio" name="gender" id="Hr" value="Hr" required>
             </div>
-
-            <div class="row">
-                <div class="col-50">
-                    <label for="lastName">Nachname:</label>
-                </div>
-                <div class="col-50">
-                    <input type="text" id="lastName" name="lastName" placeholder="Ihr Nachname" required>
-                </div>
+                
+            <div>
+                <label for="Nb">Divers</label>
+                <input type="radio" name="gender" id="Nb" value="Nb" required>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-50">
-                    <label for="phone">Telefon:</label>
-                </div>
-                <div class="col-50">
-                    <input type="tel" id="phone" name="phone" placeholder="Optional">
-                </div>
+        <br>
+        
+        <div class="row">
+            <div class="col-50">
+                <label for="firstName">Vorname:</label>
             </div>
-
-            <div class="row">
-                <div class="col-50">
-                    <label for="email">E-Mail:</label>
-                </div>
-                <div class="col-50">
-                    <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
-                </div>
+            <div class="col-50">
+                <input type="text" id="firstName" name="firstName" placeholder="Ihr Vorname" required>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-50">
-                    <label for="companyName">Unternehmen:</label>
-                </div>
-                <div class="col-50">
-                    <input type="text" id="companyName" name="companyName" placeholder="Ihr Unternehmen" required>
-                </div>
+        <div class="row">
+            <div class="col-50">
+                <label for="lastName">Nachname:</label>
             </div>
-
-            <br>
-
-            <div class="row">
-                <div class="col-100 centered">
-                    <textarea name="message" class="primary" id="message" placeholder="Hier können Sie mir noch eine Nachricht hinterlassen! (Optional)"></textarea>
-                </div>
+            <div class="col-50">
+                <input type="text" id="lastName" name="lastName" placeholder="Ihr Nachname" required>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-100 centered">
-                    <label class="tos" for="tos"><u>Hiermit bestätige ich, dass meine Daten zur Kontaktaufnahme gespeichert werden dürfen.</u></label>
-                    <input type="checkbox" id="tos" required>
-                </div>
+        <div class="row">
+            <div class="col-50">
+                <label for="phone">Telefon:</label>
             </div>
-
-            <div class="btn-box">
-                <button type="reset" class="btn">Zurücksetzen</button>
-                <button type="submit" class="btn">Absenden!</button>
+            <div class="col-50">
+                <input type="tel" id="phone" name="phone" placeholder="Optional">
             </div>
+        </div>
 
-        </form>
-    </div>
+        <div class="row">
+            <div class="col-50">
+                <label for="email">E-Mail:</label>
+            </div>
+            <div class="col-50">
+                <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-50">
+                <label for="companyName">Unternehmen:</label>
+            </div>
+            <div class="col-50">
+                <input type="text" id="companyName" name="companyName" placeholder="Ihr Unternehmen" required>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-100">
+                <textarea name="message" id="message" placeholder="Hier können Sie mir noch eine Nachricht hinterlassen! (Optional)"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-100">
+                <label class="tos" for="tos"><u>Hiermit bestätige ich, dass meine Daten zur Kontaktaufnahme gespeichert werden dürfen.</u><input type="checkbox" id="tos" required></label>
+                
+            </div>
+        </div>
+
+        <div class="btn-box">
+            <button type="reset" class="btn">Zurücksetzen</button>
+            <button type="submit" class="btn">Absenden!</button>
+        </div>
+    </form>
+
 </div>
+
 {% endblock %}

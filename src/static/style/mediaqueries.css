@@ -13,13 +13,13 @@
 }
 
 @media (min-width: 500px) {
-    .container {
+    .wrapper {
         width: 80%;
     }
 }
 
 @media (min-width: 768px) {
-    .container {
+    .wrapper {
         width: 80%;
     }
 
@@ -27,16 +27,13 @@
         max-width: 50%;
     }
 
-    .contact-form {
-        font-size: 1.4rem;
-    }
     .col-50 input {
         font-size: 1.2rem;
         width: fit-content;
     }
-    textarea {
-        width: 75ch;
-        height: 8rem;
+
+    #contact-form {
+        width: 60%;
     }
 }
 
@@ -49,6 +46,10 @@
     .col-50 input {
         font-size: 1rem;
     }
+
+    #contact-form {
+        width: 50%;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -60,17 +61,14 @@
         width: 50%;
     }
 
-    #github {
-        width: 15%;
-    }
-
     #linkedin {
         width: 10%;
     }
 
-    .contact-form {
+    #contact-form {
         width: 40%;
     }
+
 }
 
 @media (min-width: 1600px) {
@@ -78,7 +76,8 @@
         width: 40%;
     }
 
-    .contact-form {
+    #contact-form {
         width: 30%;
     }
+
 }
