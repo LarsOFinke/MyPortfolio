@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/qualifications.css') }}">
+{% endblock %}
+    
+
+{% block desktop_nav_header %}
+Qualifikationen
+{% endblock %}
+
+
+{% block mobile_nav_header %}
+Qualifikationen
+{% endblock %}
+
+
+{% block content %}
+
+<div class="wrapper centered bordered">
+    
+    <h1>Meine absolvierten Kurse!</h1>
+    
+    <div class="centered bordered">
+
+        <h2><u>Udemy</u></h2>
+        <ul>
+            <li><a href="https://www.udemy.com/certificate/UC-62816cd1-e1e3-4a44-a153-e4c26f8ad710/" target="_blank">Python Bootcamp</a></li>
+            <li><a href="https://www.udemy.com/certificate/UC-a1ac840e-3bd7-41a2-b44e-2b47e91b60cc/" target="_blank">Javascript Bootcamp</a></li>
+            <li><a href="https://www.udemy.com/certificate/UC-7834757f-b910-4e68-ab94-ddc55d4ff637/" target="_blank">Linux LPIC-1 Bootcamp</a></li>
+            <li><a href="https://www.udemy.com/certificate/UC-8bc4376e-a312-44aa-b709-67818a316000/" target="_blank">NGINX Bootcamp</a></li>
+            <li><a href="https://www.udemy.com/certificate/UC-185ec357-edf6-4013-8bb5-d120cc97dd69/" target="_blank">Git(Hub) Bootcamp</a></li>
+        </ul>
+
+        <hr>
+
+        <h2><u>LinkedIn-Learning</u></h2>
+        <div class="centered col-20">
+            <a class="centered" href="https://www.linkedin.com/in/lars-oliver-finke-35a65a347/" target="_blank">
+                <img id="linkedin" src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn Logo">
+            </a>
+        </div>
+        
+        <ul>
+            <li>Einführung in grundlegende Fähigkeiten</li>
+            <li>Word Grundkurs (Microsoft 365)</li>
+            <li>PowerPoint 2019 lernen</li>
+            <li>Tabellendesign für relationale Datenbanken</li>
+            <li>SQL Lernen</li>
+        </ul>
+
+        <hr>
+
+        <h2><u>Weitere</u></h2>
+        <ul>
+            <li>Blender Kickstarter by Bluewave-Tech</li>
+        </ul>
+        
+    </div>
+
+</div>
+
+{% endblock %}

@@ -17,9 +17,9 @@ def projects():
     return render_template("projects.html")
 
 
-@views.route("certificates")
-def certificates():
-    return render_template("certificates.html")
+@views.route("qualifications")
+def qualifications():
+    return render_template("qualifications.html")
 
 
 @views.route("/contact", methods=["GET", "POST"])

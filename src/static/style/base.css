@@ -13,6 +13,12 @@ nav img {
     margin-top: 4px;
     margin-left: 4px;
 }
+nav h1 {
+    float: left;
+    margin: .5rem 0 0 2rem;
+    padding: .25rem;
+    text-decoration: underline;
+}
 
 
 /* VIEWPORT SWITCH */
@@ -51,13 +57,6 @@ nav img {
 
 
 /* ### NAVBAR MOBIL ### */
-.mobile-nav h1 {
-    float: left;
-    margin: .5rem 0 0 2rem;
-    padding: .25rem;
-    text-decoration: underline;
-}
-
 .mobile-nav-dropdown{
     float: right;
 }
@@ -98,10 +97,10 @@ nav img {
 
 /* ### FOOTER ### */
 footer {
-    position: relative;
+    position: sticky;
     bottom: 0;
     left: 0;
     font-size: .9rem;
     width: 100%;
-    background-color: var(--navy-blue);
+    background-color: var(--light-navy-blue);
 }

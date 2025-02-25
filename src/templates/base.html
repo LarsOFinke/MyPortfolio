@@ -22,10 +22,12 @@
                         <img class="bordered" src="{{ url_for('static', filename='images/logo.png') }}" alt="Das ist ein Bild vom Logo der Webseite">
                     </a>
                     
+                    <h1>{% block desktop_nav_header %}{% endblock %}</h1>
+
                     <ul>
                         <li class="bordered"><a href="/">Über mich</a></li>
                         <li class="bordered"><a href="/projects">Projekte</a></li>
-                        <li class="bordered"><a href="/certificates">Zertifikate</a></li>
+                        <li class="bordered"><a href="/qualifications">Qualifikationen</a></li>
                         <li class="bordered"><a href="/contact">Kontakt</a></li>
                     </ul>
                 </div>
@@ -40,7 +42,7 @@
                     <img class="bordered" src="{{ url_for('static', filename='images/logo.png') }}" alt="Das ist ein Bild vom Logo der Webseite">
                 </a>
 
-                <h1>{% block nav_header %}{% endblock %}</h1>
+                <h1>{% block mobile_nav_header %}{% endblock %}</h1>
                     
                 <div class="mobile-nav-dropdown">
                     <div class="mobile-nav-button bordered">&equiv;</div>
@@ -48,7 +50,7 @@
                         <ul>
                             <li class="bordered"><a href="/">Über mich</a></li>
                             <li class="bordered"><a href="/projects">Projekte</a></li>
-                            <li class="bordered"><a href="/certificates">Zertifikate</a></li>
+                            <li class="bordered"><a href="/qualifications">Qualifikationen</a></li>
                             <li class="bordered"><a href="/contact">Kontakt</a></li>
                         </ul>
                     </div>
