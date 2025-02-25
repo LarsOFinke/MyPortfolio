@@ -21,7 +21,6 @@
 }
 
 
-
 /* ### DEFAULTS ### */
 * {
     box-sizing: border-box;
@@ -42,9 +41,27 @@ h1, h2, h3, h4 {
 }
 
 
-
 /* ### GENERAL ### */
 
+/* LINK STYLE */
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+a:link {
+    color: var(--gold);
+}
+a:hover {
+    color: var(--light-red);
+}
+a:active {
+    color: var(--dark-red);
+}
+a:visited {
+    color: var(--gold);
+}
+
+/* CLASSES */
 .clearfix {
     content: "";
     display: block;
@@ -96,123 +113,6 @@ h1, h2, h3, h4 {
 
 
 
-/* ### NAVBAR GENERAL ### */
-
-nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 52px;
-    background-color: var(--navy-blue);
-    opacity: .9;
-}
-
-/* LINK STYLE */
-a {
-    text-decoration: none;
-    font-size: 1.3rem;
-}
-a:link {
-    color: var(--gold);
-}
-a:hover {
-    color: var(--light-red);
-}
-a:active {
-    color: var(--dark-red);
-}
-a:visited {
-    color: var(--gold);
-}
-
-/* VIEWPORT SWITCH */
-.mobile-nav {
-    display: block;
-}
-.desktop-nav {
-    display: none;
-}
-@media (min-width: 767px) {
-    .mobile-nav {
-        display: none;
-    }
-    .desktop-nav {
-        display: inline-block;
-    }
-}
-
-
-
-/* ### NAVBAR MOBIL ### */
-
-.mobile-nav img {
-    float: left;
-    height: 42px;
-    margin-top: 4px;
-    margin-left: 4px;
-}
-
-.mobile-nav h1 {
-    float: left;
-    margin: .5rem 0 0 2rem;
-    padding: .25rem;
-    text-decoration: underline;
-}
-
-.mobile-nav-dropdown{
-    float: right;
-}
-
-.mobile-nav-button {
-    font-size: 2.5rem;
-    color: var(--gold);
-    width: 50px;
-    height: 50px;
-    text-align:center;
-
-    float: right;
-    position: relative;
-}
-
-.mobile-nav-content {
-    display: none;
-    background-color: var(--light-navy-blue);
-    border-top: 2px solid var(--navy-blue);
-    width: fit-content;
-    height: fit-content;
-    padding-right: 1rem;
-}
-.mobile-nav-content ul {
-    padding-left: 0;
-}
-.mobile-nav-content li {
-    list-style-type: none;
-    padding: .3rem;
-    margin-bottom: .7rem;
-    background-color: var(--navy-blue);
-    text-align: center;
-}
-.mobile-nav-dropdown:hover > .mobile-nav-content {
-    display: block;
-}
-
-
-
-/* ### NAVBAR DESKTOP ### */
-
-.desktop-nav {
-    width: 100%;
-}
-.desktop-nav ul {
-    justify-content: space-evenly;
-    margin-top: .5rem;
-}
-.desktop-nav ul > li {
-    display: inline-block;
-}
-
-
-
 /* ### GRID-SYSTEM ### */
 
 .row { height: fit-content; }
@@ -235,159 +135,3 @@ a:visited {
 
 
 
-/* ### FOOTER ### */
-footer {
-    position:fixed;
-    bottom: 0;
-    left: 0;
-    font-size: .75rem;
-    width: 100%;
-    background-color: var(--navy-blue);
-}
-
-
-
-
-
-
-/* ### ABOUT ME PAGE ### */
-.me{
-    width: 30%;
-}
-
-
-
-/* ### PROJECTS PAGE ### */
-
-#github {
-    width: 20%;
-}
-#linkedin {
-    width: 15%;
-}
-
-video {
-    width: 60%;
-    margin: 1rem 0 0 .25rem;
-}
-
-.projects > a {
-    text-decoration: underline;
-    text-align: center;
-}
-
-
-
-/* ### CONTACT PAGE ### */
-
-.col-50 > input {
-    margin-right: 2rem;
-}
-
-.col-50 input {
-    margin: 0 0 0 4px;
-    width: 12ch;
-}
-.col-50 label {
-    font-weight: bold;
-    font-size: 1.2rem;
-
-    display: flex;
-    text-align: right;
-    justify-content: flex-end;
-}
-textarea {
-    width: 40ch;
-    height: 5rem;
-}
-
-
-
-/* 
-=== WICHTIGE BREAKPOINTS ===
-768     Pixel   (iPad Hochformat)
-1024    Pixel   (iPad Querformat)
-1200    Pixel   (Laptop)
-1600   Pixel   (Größere Endgeräte)
-*/
-
-@media (min-width: 370px) {
-    .col-50 input {
-        width: 20ch;
-    }
-}
-
-@media (min-width: 500px) {
-    .container {
-        width: 80%;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 80%;
-    }
-
-    video {
-        max-width: 50%;
-    }
-
-    .contact-form {
-        font-size: 1.4rem;
-    }
-    .col-50 input {
-        font-size: 1.2rem;
-        width: fit-content;
-    }
-    textarea {
-        width: 75ch;
-        height: 8rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        width: 60%;
-        padding: 2%;
-    }
-
-    .col-50 input {
-        font-size: 1rem;
-    }
-
-    footer {
-        font-size: .9rem;
-    }
-}
-
-@media (min-width: 1400px) {
-    body {
-        font-size: 1.1rem;
-    }
-
-    .container {
-        width: 50%;
-    }
-
-    #github {
-        width: 15%;
-    }
-
-    #linkedin {
-        width: 10%;
-    }
-
-    .contact-form {
-        width: 40%;
-    }
-}
-
-@media (min-width: 1600px) {
-    .container {
-        width: 40%;
-    }
-
-    .contact-form {
-        width: 30%;
-    }
-}

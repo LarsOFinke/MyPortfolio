@@ -1,0 +1,88 @@
+/* 
+=== WICHTIGE BREAKPOINTS ===
+768     Pixel   (iPad Hochformat)
+1024    Pixel   (iPad Querformat)
+1200    Pixel   (Laptop)
+1600   Pixel   (Größere Endgeräte)
+*/
+
+@media (min-width: 370px) {
+    .col-50 input {
+        width: 20ch;
+    }
+}
+
+@media (min-width: 500px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    video {
+        max-width: 50%;
+    }
+
+    .contact-form {
+        font-size: 1.4rem;
+    }
+    .col-50 input {
+        font-size: 1.2rem;
+        width: fit-content;
+    }
+    textarea {
+        width: 75ch;
+        height: 8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 60%;
+        padding: 2%;
+    }
+
+    .col-50 input {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    #github {
+        width: 15%;
+    }
+
+    #linkedin {
+        width: 10%;
+    }
+
+    .contact-form {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        width: 40%;
+    }
+
+    .contact-form {
+        width: 30%;
+    }
+}

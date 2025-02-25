@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
     <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/base.css') }}">
+    {% block stylesheets %}
+    {% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/mediaqueries.css') }}">
 </head>
 <body>
 
@@ -50,15 +55,16 @@
     </nav>
 
 
-    <div class="main-container centered">
-        {% block content %}
-        {% endblock %}
-    </div>
+    {% block content %}
+    {% endblock %}
+
 
     <footer>
-        
-        <div class="copyright">© 2025 Lars-Oliver Finke. Alle Rechte vorbehalten.</div>
+        <p>© 2025 Lars-Oliver Finke. Alle Rechte vorbehalten.</p>
     </footer>
 
+
+    {% block scripts %}
+    {% endblock %}
 </body>
 </html>

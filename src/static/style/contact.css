@@ -1,0 +1,22 @@
+/* ### CONTACT PAGE ### */
+
+.col-50 > input {
+    margin-right: 2rem;
+}
+
+.col-50 input {
+    margin: 0 0 0 4px;
+    width: 12ch;
+}
+.col-50 label {
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+}
+textarea {
+    width: 40ch;
+    height: 5rem;
+}

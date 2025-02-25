@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/contact.css') }}">
+{% endblock %}
+
+
 {% block nav_header %}
 Kontakt
 {% endblock %}

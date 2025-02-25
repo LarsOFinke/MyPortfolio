@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/certificates.css') }}">
+{% endblock %}
+    
+
 {% block nav_header %}
 Zertifikate
 {% endblock %}
