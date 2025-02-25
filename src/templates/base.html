@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='style/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style/base.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/base.css') }}">
     {% block stylesheets %}
     {% endblock %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='style/mediaqueries.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/mediaqueries.css') }}">
 </head>
 <body class="centered">
 
@@ -18,6 +18,10 @@
         <div class="desktop-nav">
             <div class="row">
                 <div class="col-100">
+                    <a href="/">
+                        <img class="bordered" src="{{ url_for('static', filename='images/logo.png') }}" alt="Das ist ein Bild vom Logo der Webseite">
+                    </a>
+                    
                     <ul>
                         <li class="bordered"><a href="/">Über mich</a></li>
                         <li class="bordered"><a href="/projects">Projekte</a></li>
@@ -60,7 +64,7 @@
 
 
     <footer>
-        <p>© 2025 Lars-Oliver Finke. Alle Rechte vorbehalten.</p>
+        © 2025 Lars-Oliver Finke. Alle Rechte vorbehalten.
     </footer>
 
 

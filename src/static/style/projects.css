@@ -1,16 +1,14 @@
 /* ### PROJECTS PAGE ### */
-
 #github {
-    width: 20%;
+    width: 100%;
 }
-#linkedin {
-    width: 15%;
-}
+
 
 video {
     width: 60%;
     margin: 1rem 0 0 .25rem;
 }
+
 
 .projects > a {
     text-decoration: underline;
