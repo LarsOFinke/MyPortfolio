@@ -41,7 +41,7 @@
 }
 
 @media (min-width: 1024px) {
-    .container {
+    .wrapper {
         width: 60%;
         padding: 2%;
     }
@@ -50,7 +50,7 @@
         font-size: 1rem;
     }
 
-    footer {
+    footer p {
         font-size: .9rem;
     }
 }
@@ -60,7 +60,7 @@
         font-size: 1.1rem;
     }
 
-    .container {
+    .wrapper {
         width: 50%;
     }
 
@@ -78,7 +78,7 @@
 }
 
 @media (min-width: 1600px) {
-    .container {
+    .wrapper {
         width: 40%;
     }
 
