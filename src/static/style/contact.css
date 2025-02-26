@@ -1,5 +1,7 @@
 /* ### CONTACT PAGE ### */
-
+#linkedin {
+    width: 100%;
+}
 .col-50 > input {
     margin-right: 2rem;
 }

@@ -1,7 +1,3 @@
-#linkedin {
-    width: 100%;
-}
-
 .udemy li {
     width: fit-content;
     color: var(--gold);
@@ -38,5 +34,6 @@
     top: 0;
 }
 .collapsible img {
+    width: 100%;
     margin: 1% 0;
 }
