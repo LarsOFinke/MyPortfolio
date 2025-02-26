@@ -1,3 +1,37 @@
 #linkedin {
     width: 100%;
 }
+
+ul li {
+    margin: 2% 0;
+}
+
+.collapsible-container input {
+    display: none;
+}
+.collapsible-container label {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+.collapsible-container label:after {
+    content: "";
+    transform: all 0.3s ease;
+}
+.collapsible-container input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.collapsible {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+}
+.collapsible-container input:checked ~ .collapsible {
+    max-height: 300px;
+    opacity: 1;
+    top: 0;
+}
+.collapsible img {
+    margin: 1% 0;
+}
