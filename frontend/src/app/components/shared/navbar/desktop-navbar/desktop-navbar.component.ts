@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-desktop-navbar',
   imports: [],
   templateUrl: './desktop-navbar.component.html',
-  styleUrl: './desktop-navbar.component.css'
+  styleUrls: ['./desktop-navbar.component.css', '../navbar.component.css'],
 })
-export class DesktopNavbarComponent {
-
-}
+export class DesktopNavbarComponent {}

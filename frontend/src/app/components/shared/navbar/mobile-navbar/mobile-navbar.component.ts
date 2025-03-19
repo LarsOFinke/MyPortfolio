@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-mobile-navbar',
   imports: [],
   templateUrl: './mobile-navbar.component.html',
-  styleUrl: './mobile-navbar.component.css'
+  styleUrls: ['./mobile-navbar.component.css', '../navbar.component.css']
 })
 export class MobileNavbarComponent {
 

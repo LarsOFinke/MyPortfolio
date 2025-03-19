@@ -1,0 +1,39 @@
+/* ### NAVBAR GENERAL ### */
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 52px;
+  background-color: var(--navy-blue);
+  opacity: 0.9;
+}
+img {
+  float: left;
+  height: 42px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+nav h1 {
+  float: left;
+  margin: 0.5rem 0 0 2rem;
+  padding: 0.25rem;
+  text-decoration: underline;
+}
+
+.mobile-nav {
+  display: block;
+}
+.desktop-nav {
+  display: none;
+}
+
+/* VIEWPORT SWITCH */
+
+@media (min-width: 767px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: inline-block;
+  }
+}
