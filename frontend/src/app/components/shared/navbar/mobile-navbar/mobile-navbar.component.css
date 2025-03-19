@@ -1,0 +1,70 @@
+/* ### NAVBAR GENERAL ### */
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 52px;
+  background-color: var(--navy-blue);
+  opacity: 0.9;
+}
+img {
+  float: left;
+  height: 42px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+nav h1 {
+  float: left;
+  margin: 0.5rem 0 0 2rem;
+  padding: 0.25rem;
+  text-decoration: underline;
+}
+
+.mobile-nav {
+  display: block;
+}
+
+
+/* VIEWPORT SWITCH */
+
+@media (min-width: 767px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+.mobile-nav-dropdown {
+  float: right;
+}
+
+.mobile-nav-button {
+  font-size: 2.5rem;
+  color: var(--gold);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+
+  float: right;
+  position: relative;
+}
+
+.mobile-nav-content {
+  display: none;
+  background-color: var(--light-navy-blue);
+  border-top: 2px solid var(--navy-blue);
+  width: fit-content;
+  height: fit-content;
+  padding-right: 1rem;
+}
+.mobile-nav-content ul {
+  padding-left: 0;
+}
+.mobile-nav-content li {
+  list-style-type: none;
+  padding: 0.3rem;
+  margin-bottom: 0.7rem;
+  background-color: var(--navy-blue);
+  text-align: center;
+}
+.mobile-nav-dropdown:hover > .mobile-nav-content {
+  display: block;
+}

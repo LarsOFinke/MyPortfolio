@@ -1,5 +1,9 @@
 /* ### CONTACT PAGE ### */
 
+.row {
+  display: flex;
+}
+
 .col-50 > input {
   margin-right: 2rem;
 }
