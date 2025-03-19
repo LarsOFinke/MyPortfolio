@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-qualifications',
   imports: [],
   templateUrl: './qualifications.component.html',
-  styleUrl: './qualifications.component.css'
+  styleUrl: './qualifications.component.css',
 })
-export class QualificationsComponent {
-
-}
+export class QualificationsComponent {}
