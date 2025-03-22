@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MobileNavbarComponent } from './mobile-navbar/mobile-navbar.component';
-import { DesktopNavbarComponent } from './desktop-navbar/desktop-navbar.component';
+import { DesktopNavbarComponent } from './desktop/desktop-navbar.component';
 
 @Component({
   selector: 'app-navbar',
