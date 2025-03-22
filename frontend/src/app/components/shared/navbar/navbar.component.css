@@ -20,20 +20,20 @@ nav h1 {
   text-decoration: underline;
 }
 
-.mobile-nav {
+.mobile-nav-component {
   display: block;
 }
-.desktop-nav {
+.desktop-nav-component {
   display: none;
 }
 
 /* VIEWPORT SWITCH */
 
 @media (min-width: 767px) {
-  .mobile-nav {
+  .mobile-nav-component {
     display: none;
   }
-  .desktop-nav {
+  .desktop-nav-component {
     display: inline-block;
   }
 }

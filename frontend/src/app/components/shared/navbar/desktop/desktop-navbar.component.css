@@ -13,3 +13,14 @@
   display: inline-block;
   margin: 0 0.5rem;
 }
+.desktop-nav {
+  display: none;
+}
+
+/* VIEWPORT SWITCH */
+
+@media (min-width: 767px) {
+  .desktop-nav {
+    display: inline-block;
+  }
+}
