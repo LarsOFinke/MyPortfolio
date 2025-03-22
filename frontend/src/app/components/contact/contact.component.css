@@ -1,5 +1,7 @@
 /* ### CONTACT PAGE ### */
-
+.vh-90 {
+  height: 90vh;
+}
 .row {
   display: flex;
 }
