@@ -1,6 +1,6 @@
 <form (ngSubmit)="submitContactData()">
-  <div class="btn-box">
-    <div>
+  <div class="btn-box input-box">
+    <div class="centered">
       <label for="Fr">Frau</label>
       <input
         type="radio"
@@ -12,7 +12,7 @@
       />
     </div>
 
-    <div>
+    <div class="centered">
       <label for="Hr">Herr</label>
       <input
         type="radio"
@@ -24,7 +24,7 @@
       />
     </div>
 
-    <div>
+    <div class="centered">
       <label for="Nb">Divers</label>
       <input
         type="radio"
@@ -40,10 +40,10 @@
   <br />
 
   <div class="row input-box">
-    <div class="col-50">
+    <div class="col-33">
       <label for="firstName">Vorname:</label>
     </div>
-    <div class="col-50">
+    <div class="col-66">
       <input
         type="text"
         id="firstName"
@@ -56,10 +56,10 @@
   </div>
 
   <div class="row input-box">
-    <div class="col-50">
+    <div class="col-33">
       <label for="lastName">Nachname:</label>
     </div>
-    <div class="col-50">
+    <div class="col-66">
       <input
         type="text"
         id="lastName"
@@ -72,10 +72,10 @@
   </div>
 
   <div class="row input-box">
-    <div class="col-50">
+    <div class="col-33">
       <label for="phone">Telefon:</label>
     </div>
-    <div class="col-50">
+    <div class="col-66">
       <input
         type="tel"
         id="phone"
@@ -87,10 +87,10 @@
   </div>
 
   <div class="row input-box">
-    <div class="col-50">
+    <div class="col-33">
       <label for="email">E-Mail:</label>
     </div>
-    <div class="col-50">
+    <div class="col-66">
       <input
         type="email"
         id="email"
@@ -103,10 +103,10 @@
   </div>
 
   <div class="row input-box">
-    <div class="col-50">
+    <div class="col-33">
       <label for="companyName">Unternehmen:</label>
     </div>
-    <div class="col-50">
+    <div class="col-66">
       <input
         type="text"
         id="companyName"
@@ -133,7 +133,7 @@
 
   <div class="row">
     <div class="col-100 input-box">
-      <label class="tos" for="tos"
+      <label class="tos col-90" for="tos"
         ><u
           >Hiermit bestätige ich, dass meine Daten zur Kontaktaufnahme
           gespeichert werden dürfen.</u
@@ -142,6 +142,7 @@
           type="checkbox"
           id="tos"
           name="tos"
+          class="col-10"
           required
           [(ngModel)]="tosAccepted"
       />

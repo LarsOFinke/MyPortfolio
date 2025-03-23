@@ -31,6 +31,7 @@ body {
 }
 body {
   margin: 0;
+  min-width: 300px;
   width: 100%;
   height: 100%;
   background-color: var(--light-navy-blue);
@@ -123,29 +124,35 @@ a:visited {
 
 /* ### GRID-SYSTEM ### */
 .row {
-  height: fit-content;
-  flex-direction: row;
+  height: fit-content !important;
+  flex-direction: row !important;
 }
 .row::after {
-  content: "";
-  clear: both;
-  display: block;
+  content: "" !important;
+  clear: both !important;
+  display: block !important;
 }
 
 .col-100 {
-  width: 100%;
+  width: 100% !important;
+}
+.col-90 {
+  width: 90% !important;
 }
 .col-66 {
-  width: 66.666%;
+  width: 66.666% !important;
 }
 .col-50 {
-  width: 50%;
+  width: 50% !important;
 }
 .col-33 {
-  width: 33.333%;
+  width: 33.333% !important;
 }
 .col-20 {
-  width: 20%;
+  width: 20% !important;
+}
+.col-10 {
+  width: 10% !important;
 }
 
 .wrapper [class*="col-"] {
