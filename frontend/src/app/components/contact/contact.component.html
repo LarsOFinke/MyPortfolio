@@ -16,7 +16,7 @@
         {% endif %}
     {% endwith %} -->
 
-    <form method="POST">
+    <form (ngSubmit)="submitContactData()">
       <div class="btn-box">
         <div>
           <label for="Fr">Frau</label>
@@ -141,7 +141,7 @@
             ><u
               >Hiermit bestätige ich, dass meine Daten zur Kontaktaufnahme
               gespeichert werden dürfen.</u
-            ><input type="checkbox" id="tos" required [(ngModel)]="tosAccepted"
+            ><input type="checkbox" id="tos" name="tos" required [(ngModel)]="tosAccepted"
           /></label>
         </div>
       </div>

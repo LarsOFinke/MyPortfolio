@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ContactData } from '../../interfaces/contactData';
 
 @Component({
   selector: 'app-contact',
@@ -18,7 +19,7 @@ export class ContactComponent {
   tosAccepted: boolean = false;
 
   submitContactData() {
-    const payload = {
+    const payload: ContactData = {
       gender: this.gender,
       firstName: this.firstName,
       lastName: this.lastName,
@@ -26,7 +27,8 @@ export class ContactComponent {
       email: this.email,
       companyName: this.companyName,
       message: this.message,
-      tosAccepted: this.tosAccepted
-    }
+      tosAccepted:  this.tosAccepted,
+    };
+    console.log(payload);
   }
 }
