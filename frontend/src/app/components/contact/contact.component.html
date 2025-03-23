@@ -20,7 +20,14 @@
       <div class="btn-box">
         <div>
           <label for="Fr">Frau</label>
-          <input type="radio" name="gender" id="Fr" value="Fr" required />
+          <input
+            type="radio"
+            name="gender"
+            id="Fr"
+            value="Fr"
+            required
+            [(ngModel)]="gender"
+          />
         </div>
 
         <div>
@@ -47,6 +54,7 @@
             name="firstName"
             placeholder="Ihr Vorname"
             required
+            [(ngModel)]="firstName"
           />
         </div>
       </div>
@@ -62,6 +70,7 @@
             name="lastName"
             placeholder="Ihr Nachname"
             required
+            [(ngModel)]="lastName"
           />
         </div>
       </div>
@@ -71,7 +80,13 @@
           <label for="phone">Telefon:</label>
         </div>
         <div class="col-50">
-          <input type="tel" id="phone" name="phone" placeholder="Optional" />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Optional"
+            [(ngModel)]="phone"
+          />
         </div>
       </div>
 
@@ -86,6 +101,7 @@
             name="email"
             placeholder="Ihre E-Mail-Adresse"
             required
+            [(ngModel)]="email"
           />
         </div>
       </div>
@@ -101,6 +117,7 @@
             name="companyName"
             placeholder="Ihr Unternehmen"
             required
+            [(ngModel)]="companyName"
           />
         </div>
       </div>
@@ -113,6 +130,7 @@
             name="message"
             id="message"
             placeholder="Hier können Sie mir noch eine Nachricht hinterlassen! (Optional)"
+            [(ngModel)]="message"
           ></textarea>
         </div>
       </div>
@@ -123,7 +141,7 @@
             ><u
               >Hiermit bestätige ich, dass meine Daten zur Kontaktaufnahme
               gespeichert werden dürfen.</u
-            ><input type="checkbox" id="tos" required
+            ><input type="checkbox" id="tos" required [(ngModel)]="tosAccepted"
           /></label>
         </div>
       </div>
