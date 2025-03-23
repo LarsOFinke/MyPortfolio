@@ -139,11 +139,20 @@ a:visited {
 .col-90 {
   width: 90% !important;
 }
+.col-80 {
+  width: 80% !important;
+}
 .col-66 {
   width: 66.666% !important;
 }
+.col-60 {
+  width: 60% !important;
+}
 .col-50 {
   width: 50% !important;
+}
+.col-40 {
+  width: 40% !important;
 }
 .col-33 {
   width: 33.333% !important;
