@@ -32,12 +32,26 @@
 
         <div>
           <label for="Hr">Herr</label>
-          <input type="radio" name="gender" id="Hr" value="Hr" required />
+          <input
+            type="radio"
+            name="gender"
+            id="Hr"
+            value="Hr"
+            required
+            [(ngModel)]="gender"
+          />
         </div>
 
         <div>
           <label for="Nb">Divers</label>
-          <input type="radio" name="gender" id="Nb" value="Nb" required />
+          <input
+            type="radio"
+            name="gender"
+            id="Nb"
+            value="Nb"
+            required
+            [(ngModel)]="gender"
+          />
         </div>
       </div>
 
@@ -141,7 +155,12 @@
             ><u
               >Hiermit bestätige ich, dass meine Daten zur Kontaktaufnahme
               gespeichert werden dürfen.</u
-            ><input type="checkbox" id="tos" name="tos" required [(ngModel)]="tosAccepted"
+            ><input
+              type="checkbox"
+              id="tos"
+              name="tos"
+              required
+              [(ngModel)]="tosAccepted"
           /></label>
         </div>
       </div>
