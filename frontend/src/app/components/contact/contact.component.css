@@ -22,14 +22,4 @@
   text-align: right;
   justify-content: flex-end;
 }
-textarea {
-  width: 100%;
-  height: 5rem;
-}
 
-@media (min-width: 768) {
-  textarea {
-    width: 50%;
-    height: 8rem;
-  }
-}
