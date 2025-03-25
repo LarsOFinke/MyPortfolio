@@ -33,7 +33,14 @@ export class ContactFormComponent {
       tosAccepted: this.tosAccepted,
     };
     console.log('Contact Form submitting form data: ', payload);
-    this.contactService.sendNewContact(payload);
+    this.contactService.sendNewContact(payload).subscribe({
+      next: (response) => {
+        console.log(response);
+      },
+      error: (error) => {
+        console.log(error);
+      },
+    });
     this.clearInputFields();
   }
 

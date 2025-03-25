@@ -2,6 +2,7 @@ from flask import Flask
 from flask_mailman import Mail
 from dotenv import load_dotenv
 from os import getenv, urandom
+from flask_cors import CORS
 
 
 load_dotenv()
@@ -23,5 +24,7 @@ def create_app():
     app.config["MAIL_USE_SSL"] = False
     
     mail.init_app(app)
+    
+    CORS(app)
     
     return app

@@ -48,3 +48,37 @@ def contact():
         return redirect(url_for('views.contact'))
 
     return render_template('contact.html')
+
+@views.route("/new_contact", methods=["POST", "GET"])
+def new_contact():
+    data = request.get_json()
+    print("Kontaktdaten erhalten: ", data)
+    gender: str = data.get('gender')
+    first_name: str = data.get('firstName')
+    last_name: str = data.get('lastName')
+    phone: str = data.get('phone')
+    email: str = data.get('email')
+    company_name: str = data.get('companyName')
+    message: str =  data.get('message')
+
+    if add_contact(gender, first_name, last_name, phone, email, company_name, message):
+        # flash("Kontakdaten erfolgreich eingegangen.", "info")
+        # flash("Vielen Dank für Ihr Interesse! ", "info")
+    
+        if send_mails(gender, first_name, last_name, company_name, email, phone, message):
+            # flash("... Bestätigungsmail versendet!")
+            return {
+                "success": True, 
+                "message": "Kontakt hizugefügt und Mail versendet"
+            }
+        
+        else:
+            # flash("Ups, da ist wohl ein Fehler beim Senden der Mail passiert!", "info")
+            pass
+            
+    else:
+        return {
+                "success": False, 
+                "message": "Ups, da ist wohl ein Fehler beim Eintragen in die Datenbank passiert!"
+            }
+        #pass

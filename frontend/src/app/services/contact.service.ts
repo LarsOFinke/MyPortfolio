@@ -11,6 +11,6 @@ export class ContactService {
 
   sendNewContact(payload: ContactData) {
     console.log("ContactService received payload: ", payload);
-    this.httpClient.post(`${api_url}/new_contact`, payload);
+    return this.httpClient.post(`${api_url}/new_contact`, payload);
   }
 }
