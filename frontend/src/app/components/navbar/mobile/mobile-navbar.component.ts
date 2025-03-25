@@ -1,15 +1,29 @@
 import { Component } from '@angular/core';
 import { DropdownComponent } from './dropdown/dropdown.component';
-import { HeaderService } from '../../../services/header.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-mobile-navbar',
   imports: [DropdownComponent],
   templateUrl: './mobile-navbar.component.html',
-  styleUrls: ['./mobile-navbar.component.css', '../navbar.component.css']
+  styleUrls: ['./mobile-navbar.component.css', '../navbar.component.css'],
 })
 export class MobileNavbarComponent {
   header: string = 'TEST';
-  constructor(private headerService: HeaderService) {this.header = this.headerService.navbarHeader}
+  path!: string;
 
+  constructor(
+    private activatedRoute: ActivatedRoute
+  ) {}
+
+  ngOnInit() {
+    this.activatedRoute.url.subscribe((data: any) => this.path = data.path);
+    switch (this.path) {
+      case '':
+        this.header = "HOME";
+        break;
+
+      case 'projects':
+    }
+  }
 }
