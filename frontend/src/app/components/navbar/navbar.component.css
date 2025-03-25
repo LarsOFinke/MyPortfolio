@@ -13,12 +13,6 @@ img {
   margin-top: 4px;
   margin-left: 4px;
 }
-nav h1 {
-  float: left;
-  margin: 0.5rem 0 0 2rem;
-  padding: 0.25rem;
-  text-decoration: underline;
-}
 
 .mobile-nav-component {
   display: block;

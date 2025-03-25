@@ -12,15 +12,13 @@ export class MobileNavbarComponent {
   header: string = 'TEST';
   path!: string;
 
-  constructor(
-    private activatedRoute: ActivatedRoute
-  ) {}
+  constructor(private activatedRoute: ActivatedRoute) {}
 
   ngOnInit() {
-    this.activatedRoute.url.subscribe((data: any) => this.path = data.path);
+    this.activatedRoute.url.subscribe((data: any) => (this.path = data.path));
     switch (this.path) {
       case '':
-        this.header = "HOME";
+        this.header = 'HOME';
         break;
 
       case 'projects':
