@@ -1,19 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { api_url } from '../../environment/environment.testing';
+import { ContactData } from '../interfaces/contactData';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ContactService {
-  private gender: string = '';
-  private firstName: string = '';
-  private lastName: string = '';
-  private phone: string = '';
-  private email: string = '';
-  private companyName: string = '';
-  private message: string = '';
-
   constructor(private httpClient: HttpClient) {}
 
-  sendContactForm() {}
+  sendNewContact(payload: ContactData) {
+    console.log("ContactService received payload: ", payload);
+    this.httpClient.post(`${api_url}/new_contact`, payload);
+  }
 }
