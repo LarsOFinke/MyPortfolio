@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-dropdown',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './dropdown.component.html',
   styleUrl: './dropdown.component.css',
 })

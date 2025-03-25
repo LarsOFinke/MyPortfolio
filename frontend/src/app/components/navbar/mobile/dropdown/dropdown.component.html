@@ -2,12 +2,18 @@
   <div class="mobile-nav-button bordered">&equiv;</div>
   <div class="mobile-nav-content clearfix">
     <ul>
-      <li class="bordered"><a href="/">Über mich</a></li>
-      <li class="bordered"><a href="/projects">Projekte</a></li>
       <li class="bordered">
-        <a href="/qualifications">Qualifikationen</a>
+        <a [routerLink]="['/']" routerLinkActive="active">Über mich</a>
       </li>
-      <li class="bordered"><a href="/contact">Kontakt</a></li>
+      <li class="bordered">
+        <a [routerLink]="['/projects']" routerLinkActive="active">Projekte</a>
+      </li>
+      <li class="bordered">
+        <a [routerLink]="['/qualifications']" routerLinkActive="active"
+          >Qualifikationen</a
+        >
+      </li>
+      <li class="bordered"><a [routerLink]="['/contact']" routerLinkActive="active">Kontakt</a></li>
     </ul>
   </div>
 </div>
