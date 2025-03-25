@@ -1,3 +1,18 @@
+@if (success) {
+<hr />
+<div class="flash-success">
+  <p align="center">{{ msg }} 😄</p>
+</div>
+<hr />
+}
+@if (error) {
+  <hr />
+  <div class="flash-success">
+    <p align="center">{{ msg }} 😔</p>
+  </div>
+  <hr />
+  }
+
 <form (ngSubmit)="submitContactData()">
   <div class="btn-box input-box">
     <div class="centered">
@@ -139,12 +154,12 @@
           gespeichert werden dürfen.</u
         ></label
       ><input
-          type="checkbox"
-          id="tos"
-          name="tos"
-          class="col-20"
-          required
-          [(ngModel)]="tosAccepted"
+        type="checkbox"
+        id="tos"
+        name="tos"
+        class="col-20"
+        required
+        [(ngModel)]="tosAccepted"
       />
     </div>
   </div>

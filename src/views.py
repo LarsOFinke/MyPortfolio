@@ -62,23 +62,20 @@ def new_contact():
     message: str =  data.get('message')
 
     if add_contact(gender, first_name, last_name, phone, email, company_name, message):
-        # flash("Kontakdaten erfolgreich eingegangen.", "info")
-        # flash("Vielen Dank für Ihr Interesse! ", "info")
-    
         if send_mails(gender, first_name, last_name, company_name, email, phone, message):
-            # flash("... Bestätigungsmail versendet!")
             return {
                 "success": True, 
-                "message": "Kontakt hizugefügt und Mail versendet"
+                "message": "Kontakdaten erfolgreich eingegangen. \nVielen Dank für Ihr Interesse! \n... Bestätigungsmail versendet!"
             }
-        
+
         else:
-            # flash("Ups, da ist wohl ein Fehler beim Senden der Mail passiert!", "info")
-            pass
+            return {
+                "success": False, 
+                "message": "Ups, da ist wohl ein Fehler beim Senden der Mail passiert!"
+            }
             
     else:
         return {
                 "success": False, 
                 "message": "Ups, da ist wohl ein Fehler beim Eintragen in die Datenbank passiert!"
             }
-        #pass

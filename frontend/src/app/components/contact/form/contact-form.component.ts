@@ -19,6 +19,10 @@ export class ContactFormComponent {
   message: string = '';
   tosAccepted: boolean = false;
 
+  success: boolean = false;
+  error: boolean = false;
+  msg: string = '';
+
   constructor(private contactService: ContactService) {}
 
   submitContactData() {
@@ -34,8 +38,14 @@ export class ContactFormComponent {
     };
     console.log('Contact Form submitting form data: ', payload);
     this.contactService.sendNewContact(payload).subscribe({
-      next: (response) => {
+      next: (response: any) => {
         console.log(response);
+        this.msg = response.message;
+        if (response.success) {
+          this.success = true;
+        } else {
+          this.error = true;
+        }
       },
       error: (error) => {
         console.log(error);
