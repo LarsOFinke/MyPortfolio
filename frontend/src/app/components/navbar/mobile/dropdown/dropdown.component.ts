@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-dropdown',
   imports: [],
   templateUrl: './dropdown.component.html',
-  styleUrl: './dropdown.component.css'
+  styleUrl: './dropdown.component.css',
 })
-export class DropdownComponent {
-
-}
+export class DropdownComponent {}

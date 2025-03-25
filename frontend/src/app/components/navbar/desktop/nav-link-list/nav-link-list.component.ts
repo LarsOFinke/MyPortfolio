@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-nav-link-list',
   imports: [],
   templateUrl: './nav-link-list.component.html',
-  styleUrl: './nav-link-list.component.css'
+  styleUrl: './nav-link-list.component.css',
 })
-export class NavLinkListComponent {
-
-}
+export class NavLinkListComponent {}

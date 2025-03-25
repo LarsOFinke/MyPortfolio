@@ -9,10 +9,3 @@
     display: none;
   }
 }
-
-.mobile-nav h2 {
-  float: left;
-  margin: 0.5rem 0 0 2rem;
-  padding: 0.25rem;
-  text-decoration: underline;
-}
