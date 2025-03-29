@@ -11,8 +11,11 @@
         qualification.name
       }}</label>
       <div class="collapsible">
-        <a href="{{ qualification.link }}" target="_blank">
-          <img src="{{ qualification.img }}" />
+        <a
+          [href]="'https://www.udemy.com/certificate/' + qualification.link"
+          target="_blank"
+        >
+          <img [src]="'assets/images/' + qualification.img" />
         </a>
       </div>
     </div>
