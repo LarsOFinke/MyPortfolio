@@ -1,0 +1,7 @@
+<ul>
+  @for (qualification of qualifications; track $index) {
+  <li>{{ qualification }}</li>
+  } @empty {
+  <li>There are no qualifications yet for this subject.</li>
+  }
+</ul>

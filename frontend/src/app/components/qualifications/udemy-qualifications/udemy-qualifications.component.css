@@ -1,0 +1,8 @@
+.udemy li {
+  width: fit-content;
+  color: var(--gold);
+  border: 2px solid var(--grey);
+  border-radius: 8px;
+  padding: 0.25rem;
+  margin: 2% 0;
+}
