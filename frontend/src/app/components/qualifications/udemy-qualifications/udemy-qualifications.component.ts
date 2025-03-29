@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UdemyQualification } from '../../../interfaces/udemy-qualification';
 
 @Component({
   selector: 'app-udemy-qualifications',
@@ -10,7 +11,7 @@ import { Component } from '@angular/core';
   ],
 })
 export class UdemyQualificationsComponent {
-  qualifications = [
+  qualifications: UdemyQualification[] = [
     {
       category: 'python',
       name: 'Python Bootcamp',
