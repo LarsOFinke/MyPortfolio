@@ -8,3 +8,7 @@ footer {
   background-color: var(--light-navy-blue);
   margin-top: 1.5%;
 }
+
+a {
+  font-size: 0.9rem;
+}
