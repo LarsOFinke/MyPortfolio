@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { environment } from '../../../environment/environment.testing';
+import { currentEnvironment } from '../../../environment/environment';
 
 @Component({
   selector: 'app-impressum',
@@ -16,7 +16,7 @@ export class ImpressumComponent implements OnInit {
   ngOnInit(): void {
     // Importiere die Kontaktinformation aus der environment-Datei
     this.contactInformation = this.sanitizer.bypassSecurityTrustHtml(
-      environment.contactInformation
+      currentEnvironment.contactInformation
     );
   }
 }

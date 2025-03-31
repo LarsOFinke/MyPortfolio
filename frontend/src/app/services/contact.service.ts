@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { api_url } from '../../environment/environment.testing';
+import { currentEnvironment } from '../../environment/environment';
 import { ContactData } from '../interfaces/contactData';
 
 @Injectable({
@@ -11,6 +11,6 @@ export class ContactService {
 
   sendNewContact(payload: ContactData) {
     console.log("ContactService received payload: ", payload);
-    return this.httpClient.post(`${api_url}/new_contact`, payload);
+    return this.httpClient.post(`${currentEnvironment.api_url}/new_contact`, payload);
   }
 }
