@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 })
 export class LinkedinQualificationsComponent {
   qualifications: String[] = [
-    'Einführung in grundlegende Fähigkeite',
+    'Einführung in grundlegende Fähigkeiten',
     'Word Grundkurs (Microsoft 365)',
     'PowerPoint 2019 lernen',
     'Tabellendesign für relationale Datenbanken',

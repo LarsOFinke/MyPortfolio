@@ -1,6 +1,6 @@
 export interface UdemyQualification {
   category: String;
   name: String;
-  link: String;
+  certificateLink: String;
   img: String;
 }

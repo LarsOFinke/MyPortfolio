@@ -1,4 +1,4 @@
-<ul>
+<ul class="qualification-list">
   @for (qualification of qualifications; track $index) {
   <li>
     <div class="collapsible-container">
@@ -12,7 +12,7 @@
       }}</label>
       <div class="collapsible">
         <a
-          [href]="'https://www.udemy.com/certificate/' + qualification.link"
+          [href]="'https://www.udemy.com/certificate/' + qualification.certificateLink"
           target="_blank"
         >
           <img [src]="'assets/images/' + qualification.img" />
