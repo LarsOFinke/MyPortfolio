@@ -45,6 +45,10 @@ export class NavbarComponent implements OnInit {
         this.header = 'Kontakt';
         break;
 
+      case 'impressum':
+        this.header = 'Impressum';
+        break;
+
       default:
         this.header = this.path.toUpperCase() || 'UNKNOWN'; // Handle unknown routes
         break;

@@ -121,6 +121,12 @@ a:visited {
 .float-right {
   float: right;
 }
+.vh-90 {
+  height: 90vh;
+}
+.vh-80 {
+  height: 80vh;
+}
 
 /* ### GRID-SYSTEM ### */
 .row {

@@ -1,7 +1,5 @@
 /* ### CONTACT PAGE ### */
-.vh-90 {
-  height: 90vh;
-}
+
 .row {
   display: flex;
 }
@@ -22,4 +20,3 @@
   text-align: right;
   justify-content: flex-end;
 }
-
