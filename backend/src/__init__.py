@@ -13,7 +13,7 @@ def create_app():
     app = Flask(__name__)
     
     from .api import api
-    app.register_blueprint(api)
+    app.register_blueprint(api, url_prefix="/api")
     
     app.config['SECRET_KEY'] = urandom(24)
     app.config["MAIL_SERVER"] = getenv("MAIL_SERVER")

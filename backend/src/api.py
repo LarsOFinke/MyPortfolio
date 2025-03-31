@@ -3,7 +3,7 @@ from .crud import add_contact
 from .mail_sender import send_mails
 
 
-api = Blueprint("api", __name__, url_prefix="/")
+api = Blueprint("api", __name__)
 
 
 @api.route("/new_contact", methods=["POST", "GET"])
