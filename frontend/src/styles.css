@@ -34,7 +34,7 @@ body {
   min-width: 300px;
   width: 100%;
   height: 100%;
-  background-color: var(--light-navy-blue);
+  background: linear-gradient(90deg, var(--navy-blue), var(--dark-blue), var(--navy-blue));
   color: var(--grey);
   font-family: "Franklin Gothic Medium", "Roboto", Arial, sans-serif;
 }
