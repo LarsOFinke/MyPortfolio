@@ -5,28 +5,34 @@
     <hr />
 
     @for (project of projects; track project.id) {
-    <div class="projects">
+    <div class="projects centered">
       <h2>
         <u>{{ project.title }}</u>
       </h2>
 
-      <div>
-        <a
-          [href]="project.websiteLink"
-          target="_blank"
-          [title]="project.websiteTitle"
-          >Link zur Webseite</a
-        >
-        <br />
-        <a
-          [href]="project.gitHubLink"
-          target="_blank"
-          [title]="project.gitHubTitle"
-          >Link zum GitHub-Repository</a
-        >
-      </div>
+      <ul class="links">
+        <li>
+          <a
+            [href]="project.websiteLink"
+            target="_blank"
+            [title]="project.websiteTitle"
+            >Link zur Webseite</a
+          >
+        </li>
 
-      <p>{{ project.descriptionText }}</p>
+        <li>
+          <a
+            [href]="project.gitHubLink"
+            target="_blank"
+            [title]="project.gitHubTitle"
+            >Link zum GitHub-Repository</a
+          >
+        </li>
+      </ul>
+
+      <div class="description-text">
+        <p>{{ project.descriptionText }}</p>
+      </div>
     </div>
 
     <br class="clearfix" />

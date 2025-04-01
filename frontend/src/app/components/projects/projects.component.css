@@ -1,14 +1,20 @@
 /* ### PROJECTS PAGE ### */
 
-a {
-  font-size: 1.1rem;
+.projects a {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.links li {
+  margin-bottom: 12px;
 }
 
 .projects {
   padding: 1%;
   margin: 1%;
 }
-.projects > a {
-  text-decoration: underline;
-  text-align: center;
+
+.description-text {
+  width: 80%;
 }
