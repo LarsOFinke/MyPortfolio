@@ -133,6 +133,9 @@ a:visited {
 .m-8px {
   margin: 8px;
 }
+.mr-24px {
+  margin-right: 24px;
+}
 
 /* ### GRID-SYSTEM ### */
 .d-flex {
