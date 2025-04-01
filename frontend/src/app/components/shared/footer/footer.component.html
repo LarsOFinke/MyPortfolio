@@ -1,6 +1,18 @@
 <footer>
-  © 2025 Lars-O. Finke |
-  <a [routerLink]="['/impressum']" routerLinkActive="router-link-active"
-    >Impressum</a
-  >
+  <div class="row centered">
+    <div class="row d-flex col-80">
+      <p>© 2025 Lars-O. Finke|</p>
+      <a
+        [routerLink]="['/impressum']"
+        routerLinkActive="router-link-active"
+        class="centered"
+        >Impressum</a
+      >
+    </div>
+
+    <div class="row d-flex col-20 centered">
+      <app-git-hub-logo></app-git-hub-logo>
+      <app-linkedin-logo class="m-8px"></app-linkedin-logo>
+    </div>
+  </div>
 </footer>
