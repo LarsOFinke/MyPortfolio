@@ -1,5 +1,13 @@
 /* ### PROJECTS PAGE ### */
 
+ul {
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
 .projects a {
   text-decoration: underline;
   text-align: center;
@@ -16,5 +24,25 @@
 }
 
 .description-text {
-  width: 80%;
+  width: 90%;
+}
+
+@media (min-width: 1023px) {
+  p {
+    font-size: 1.15rem;
+  }
+
+  .projects a {
+    font-size: 1.1rem;
+  }
+
+  .custom-wrapper {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1439px) {
+  .custom-wrapper {
+    width: 30%;
+  }
 }
