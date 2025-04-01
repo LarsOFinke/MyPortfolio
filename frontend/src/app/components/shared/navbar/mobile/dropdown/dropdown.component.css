@@ -19,12 +19,12 @@
   top: 50px;
   z-index: 1000;
   display: none;
-  background: linear-gradient(90deg, var(--navy-blue), var(--dark-blue), var(--navy-blue));
+  background: linear-gradient(var(--dark-blue), var(--navy-blue), var(--dark-blue));
   border-top: 2px solid var(--navy-blue);
   width: fit-content;
   height: fit-content;
   padding-right: 1rem;
-  
+  padding-left: 1rem;
 }
 .mobile-nav-content ul {
   padding-left: 0;

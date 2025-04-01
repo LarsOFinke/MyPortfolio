@@ -5,7 +5,7 @@ footer {
   left: 0;
   font-size: 0.9rem;
   width: 100%;
-  background: linear-gradient(var(--navy-blue), var(--dark-blue), var(--navy-blue));
+  background: linear-gradient(var(--dark-blue), var(--navy-blue), var(--dark-blue));
   border-top: 1px solid gray;
   margin-top: 1.5%;
 }
