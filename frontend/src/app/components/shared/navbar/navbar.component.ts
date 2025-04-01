@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { MobileNavbarComponent } from './mobile/mobile-navbar.component';
 import { DesktopNavbarComponent } from './desktop/desktop-navbar.component';
 import { Router } from '@angular/router';
+import { HomeLogoComponent } from './home-logo/home-logo.component';
 
 @Component({
   selector: 'app-navbar',
-  imports: [MobileNavbarComponent, DesktopNavbarComponent],
+  imports: [HomeLogoComponent, MobileNavbarComponent, DesktopNavbarComponent],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
