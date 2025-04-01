@@ -1,26 +1,31 @@
-<ul class="qualification-list">
-  @for (qualification of qualifications; track $index) {
-  <li>
-    <div class="collapsible-container">
-      <input
-        type="checkbox"
-        [checked]="qualification.category === 'python' ? true : false"
-        id="{{ qualification.category }}-head"
-      />
-      <label for="{{ qualification.category }}-head">{{
-        qualification.name
-      }}</label>
-      <div class="collapsible">
-        <a
-          [href]="'https://www.udemy.com/certificate/' + qualification.certificateLink"
-          target="_blank"
-        >
-          <img [src]="'assets/images/' + qualification.img" />
-        </a>
+<div class="centered">
+  <ul class="qualification-list">
+    @for (qualification of qualifications; track $index) {
+    <li>
+      <div class="collapsible-container">
+        <input
+          type="checkbox"
+          [checked]="qualification.category === 'python' ? true : false"
+          id="{{ qualification.category }}-head"
+        />
+        <label for="{{ qualification.category }}-head">{{
+          qualification.name
+        }}</label>
+        <div class="collapsible">
+          <a
+            [href]="
+              'https://www.udemy.com/certificate/' +
+              qualification.certificateLink
+            "
+            target="_blank"
+          >
+            <img [src]="'assets/images/' + qualification.img" />
+          </a>
+        </div>
       </div>
-    </div>
-  </li>
-  } @empty {
-  <li>There are no qualifications yet for this subject.</li>
-  }
-</ul>
+    </li>
+    } @empty {
+    <li>There are no qualifications yet for this subject.</li>
+    }
+  </ul>
+</div>
