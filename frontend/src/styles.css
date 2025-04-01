@@ -127,6 +127,9 @@ a:visited {
 .vh-80 {
   height: 80vh;
 }
+.m-12px {
+  margin: 12px;
+}
 .m-8px {
   margin: 8px;
 }

@@ -6,6 +6,7 @@ footer {
   font-size: 0.9rem;
   width: 100%;
   background-color: var(--light-navy-blue);
+  border-top: 1px solid gray;
   margin-top: 1.5%;
 }
 
@@ -15,4 +16,58 @@ p {
 
 a {
   font-size: 0.9rem;
+}
+
+.info-text {
+  display: flex;
+  width: 80%;
+  height: fit-content;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+  height: fit-content;
+}
+
+@media (min-width: 767px) {
+  .info-text {
+    width: 91%;
+  }
+
+  .logos {
+    width: 9%;
+  }
+}
+
+@media (min-width: 1023px) {
+  .info-text {
+    width: 93%;
+  }
+
+  .logos {
+    width: 7%;
+  }
+}
+
+@media (min-width: 1439px) {
+  .info-text {
+    width: 95%;
+  }
+
+  .logos {
+    width: 5%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .info-text {
+    width: 96%;
+  }
+
+  .logos {
+    width: 4%;
+  }
 }
