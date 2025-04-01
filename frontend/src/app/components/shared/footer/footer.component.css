@@ -44,26 +44,24 @@ a {
 }
 
 @media (min-width: 1023px) {
+  p {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
   .info-text {
-    width: 93%;
+    width: 95% !important;
   }
 
   .logos {
-    width: 7%;
+    width: 5% !important;
   }
 }
 
 @media (min-width: 1439px) {
-  .info-text {
-    width: 95%;
-  }
-
-  .logos {
-    width: 5%;
-  }
-}
-
-@media (min-width: 1900px) {
   .info-text {
     width: 96%;
   }
