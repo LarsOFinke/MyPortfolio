@@ -2,75 +2,44 @@
   <div class="custom-wrapper centered bordered">
     <h1>Interessiert, was ich bereits gemacht habe?</h1>
 
-    <br />
+    <hr />
 
-    <div class="bordered">
-      <div class="projects">
-        <a
-          class="centered"
-          href="https://portfolio-finke.de/"
-          target="_blank"
-          title="Mein eigenes Portfolio, gehosted auf meinem Server mit DynDNS bei Strato."
-          >Portfolio</a
-        >
-
-        <p>
-          Mein erstes richtiges Projekt stellt ein klassisches Portfolio dar und Sie befinden sich aktuell darauf. 
-          Mittlerweile habe ich das Frontend auf Angular umgebaut und das Backend verschlankt.
-          Gehosted wird es auf meinem eigenen Server (Raspberry Pi 4) mit DyDNS bei Strato.
-        </p>
-      </div>
-
-      <br class="clearfix" />
-      <hr />
-
-      <div class="projects">
-        <a
-          class="centered"
-          href="https://quizwebsite.portfolio-finke.de/"
-          target="_blank"
-          title="Link zur Quiz Website"
-          >Quiz Website</a
-        >
-
-        <p>
-          Mein nächstes Projekt, was ich Ihnen vorstellen möchte, ist eine Quiz-Website.
-          Es besteht aus einem Python Backend (Flask mit SQLite 3) und einem HTML, CSS und JavaScript Frontend.
-        </p>
-      </div>
-
-      <br class="clearfix" />
-      <hr />
-
-      <div class="projects">
-        <a
-          class="centered"
-          href="https://egc.portfolio-finke.de/"
-          target="_blank"
-          title="Link zu EGC"
-          >Browser Game - EGC</a
-        >
-
-        <p>
-          Das Projekt besteht aus Python, HTML, CSS und JavaScript, wobei Flask als micro-Framework
-          dient und den Websocket + API-Routen zur Verfügung stellt.
-          Bei diesem Projekt bringt mich insbesondere die vertiefte Arbeit mit Javascript und einem Websocket dazu immer tiefer zu graben.
-        </p>
-      </div>
-
-      <br class="clearfix" />
-      <hr />
+    @for (project of projects; track project.id) {
+    <div class="projects">
+      <h2>
+        <u>{{ project.title }}</u>
+      </h2>
 
       <div>
-        <h2><u>Habe ich Sie überzeugt?</u></h2>
-        <h3>
-          Sie können mich <a href="/contact">hier</a> direkt kontaktieren!
-        </h3>
-        <h3>
-          Noch nicht? Schauen Sie sich auch meine
-          <a href="/qualifications">Qualifikationen</a> an!
-        </h3>
+        <a
+          [href]="project.websiteLink"
+          target="_blank"
+          [title]="project.websiteTitle"
+          >Link zur Webseite</a
+        >
+        <br />
+        <a
+          [href]="project.gitHubLink"
+          target="_blank"
+          [title]="project.gitHubTitle"
+          >Link zum GitHub-Repository</a
+        >
       </div>
+
+      <p>{{ project.descriptionText }}</p>
+    </div>
+
+    <br class="clearfix" />
+    <hr />
+    }
+
+    <div>
+      <h2><u>Habe ich Sie überzeugt?</u></h2>
+      <h3>Sie können mich <a href="/contact">hier</a> direkt kontaktieren!</h3>
+      <h3>
+        Noch nicht? Schauen Sie sich auch meine
+        <a href="/qualifications">Qualifikationen</a> an!
+      </h3>
     </div>
   </div>
 </div>
