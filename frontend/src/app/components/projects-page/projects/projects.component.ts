@@ -8,6 +8,7 @@ import { Project } from '../../../interfaces/project';
   styleUrl: './projects.component.css',
 })
 export class ProjectsComponent {
+  currentProjectIndex: number = 0;
   projects: Project[] = [
     {
       id: 1,
@@ -46,4 +47,14 @@ export class ProjectsComponent {
                         Arbeit mit Javascript und einem Websocket dazu immer tiefer zu graben.`,
     },
   ];
+
+  increase() {
+    if ((this.currentProjectIndex + 1) < this.projects.length) {
+      this.currentProjectIndex++;
+    }
+  }
+
+  decrease() {
+    this.currentProjectIndex--;
+  }
 }
