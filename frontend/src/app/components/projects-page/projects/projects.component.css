@@ -33,14 +33,4 @@ p {
   .projects a {
     font-size: 1.1rem;
   }
-
-  .custom-wrapper {
-    width: 40%;
-  }
-}
-
-@media (min-width: 1439px) {
-  .custom-wrapper {
-    width: 30%;
-  }
 }

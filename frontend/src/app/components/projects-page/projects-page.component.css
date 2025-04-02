@@ -1,0 +1,11 @@
+@media (min-width: 1023px) {
+  .custom-wrapper {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1439px) {
+  .custom-wrapper {
+    width: 30%;
+  }
+}
