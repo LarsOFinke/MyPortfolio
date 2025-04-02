@@ -29,9 +29,18 @@
 </div>
 
 <div>
-  <button class="btn float-left" [class.inactive]="currentProjectIndex === 0 ? true : false" (click)="decrease()">Zurück</button>
-  <button class="btn float-right" [class.inactive]="(currentProjectIndex + 1) >= projects.length ? true : false" (click)="increase()">Nächstes</button>
+  <button
+    class="btn float-left"
+    [class.inactive]="currentProjectIndex === 0 ? true : false"
+    (click)="decrease()"
+  >
+    Zurück
+  </button>
+  <button
+    class="btn float-right"
+    [class.inactive]="currentProjectIndex + 1 >= projects.length ? true : false"
+    (click)="increase()"
+  >
+    Nächstes
+  </button>
 </div>
-
-<br class="clearfix" />
-<hr />
