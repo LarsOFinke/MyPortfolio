@@ -39,7 +39,6 @@ export class ContactFormComponent {
     console.log('Contact Form submitting form data: ', payload);
     this.contactService.sendNewContact(payload).subscribe({
       next: (response: any) => {
-        console.log(response);
         this.msg = response.message;
         if (response.success) {
           this.success = true;
@@ -48,7 +47,8 @@ export class ContactFormComponent {
         }
       },
       error: (error) => {
-        console.log(error);
+        this.error = true;
+        this.msg = "Kontaktformular konnte nicht verarbeitet werden!";
       },
     });
     this.clearInputFields();

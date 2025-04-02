@@ -5,11 +5,17 @@
 
 input {
   width: 100%;
+  background-color: var(--dark-navy-blue);
+  color: var(--light-grey);
 }
 
 textarea {
   width: 100%;
   height: 5rem;
+  background-color: var(--dark-navy-blue);
+}
+::placeholder {
+  color: var(--grey);
 }
 
 @media (min-width: 768) {
