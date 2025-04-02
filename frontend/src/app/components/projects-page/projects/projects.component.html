@@ -18,7 +18,7 @@
         [href]="projects[currentProjectIndex].gitHubLink"
         target="_blank"
         [title]="projects[currentProjectIndex].gitHubTitle"
-        >Link zum GitHub-Repository</a
+        >Link zum Repository</a
       >
     </li>
   </ul>
@@ -28,9 +28,9 @@
   </div>
 </div>
 
-<div class="btn-box">
-  <button class="btn" (click)="decrease()">Zurück</button>
-  <button class="btn" (click)="increase()">Nächstes</button>
+<div>
+  <button class="btn float-left" [class.inactive]="currentProjectIndex === 0 ? true : false" (click)="decrease()">Zurück</button>
+  <button class="btn float-right" [class.inactive]="(currentProjectIndex + 1) >= projects.length ? true : false" (click)="increase()">Nächstes</button>
 </div>
 
 <br class="clearfix" />

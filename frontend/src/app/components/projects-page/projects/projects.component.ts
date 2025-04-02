@@ -49,12 +49,14 @@ export class ProjectsComponent {
   ];
 
   increase() {
-    if ((this.currentProjectIndex + 1) < this.projects.length) {
+    if (this.currentProjectIndex + 1 < this.projects.length) {
       this.currentProjectIndex++;
     }
   }
 
   decrease() {
-    this.currentProjectIndex--;
+    if (this.currentProjectIndex !== 0) {
+      this.currentProjectIndex--;
+    }
   }
 }
