@@ -1,5 +1,10 @@
 /* ### ABOUT ME PAGE ### */
+a {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
 .me {
-    width: 30%;
-  }
-  
+  width: 30%;
+}

@@ -1,35 +1,13 @@
 /* ### CONTACT PAGE ### */
 
-.row {
-    display: flex;
+@media (min-width: 1023px) {
+  .custom-wrapper {
+    width: 40%;
   }
-  
-  .col-50 > input {
-    margin-right: 2rem;
+}
+
+@media (min-width: 1439px) {
+  .custom-wrapper {
+    width: 25% !important;
   }
-  
-  .col-50 input {
-    margin: 0 0 0 4px;
-    width: 100%;
-  }
-  .col-50 label {
-    font-weight: bold;
-    font-size: 1.2rem;
-  
-    display: flex;
-    text-align: right;
-    justify-content: flex-end;
-  }
-  
-  @media (min-width: 1023px) {
-    .custom-wrapper {
-      width: 40%;
-    }
-  }
-  
-  @media (min-width: 1439px) {
-    .custom-wrapper {
-      width: 25% !important;
-    }
-  }
-  
+}

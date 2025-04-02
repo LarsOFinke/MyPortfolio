@@ -57,7 +57,7 @@ h1 {
   }
 }
 p {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 /* ### GENERAL ### */
@@ -95,7 +95,7 @@ a:visited {
 .bordered {
   border: 2px solid var(--grey);
   border-radius: 8px;
-  padding: 0.25rem;
+  padding: 0.5rem;
 }
 .custom-wrapper {
   width: 90%;
@@ -107,7 +107,7 @@ a:visited {
   background-color: var(--navy-blue);
   color: var(--grey);
 
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
 
   margin: 2%;
