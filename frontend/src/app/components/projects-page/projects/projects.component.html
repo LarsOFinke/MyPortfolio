@@ -3,22 +3,21 @@
     <u>{{ projects[currentProjectIndex].title }}</u>
   </h2>
 
-  <ul class="links">
-    <li>
-      <a
-        [href]="projects[currentProjectIndex].websiteLink"
-        target="_blank"
-        [title]="projects[currentProjectIndex].websiteTitle"
-        >Link zur Webseite</a
-      >
-    </li>
-
+  <ul class="links centered">
     <li>
       <a
         [href]="projects[currentProjectIndex].gitHubLink"
         target="_blank"
         [title]="projects[currentProjectIndex].gitHubTitle"
         >Link zum Repository</a
+      >
+    </li>
+    <li>
+      <a
+        [href]="projects[currentProjectIndex].websiteLink"
+        target="_blank"
+        [title]="projects[currentProjectIndex].websiteTitle"
+        >Link zur Webseite</a
       >
     </li>
   </ul>

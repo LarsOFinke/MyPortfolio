@@ -4,14 +4,13 @@
   <p align="center">{{ msg }} 😄</p>
 </div>
 <hr />
+} @if (error) {
+<hr />
+<div class="flash-message">
+  <p align="center">{{ msg }} 😔</p>
+</div>
+<hr />
 }
-@if (error) {
-  <hr />
-  <div class="flash-message">
-    <p align="center">{{ msg }} 😔</p>
-  </div>
-  <hr />
-  }
 
 <form (ngSubmit)="submitContactData()">
   <div class="btn-box input-box">
@@ -165,7 +164,9 @@
   </div>
 
   <div class="btn-box">
-    <button type="reset" class="btn" (click)="clearInputFields()">Zurücksetzen</button>
+    <button type="reset" class="btn" (click)="clearInputFields()">
+      Zurücksetzen
+    </button>
     <button type="submit" class="btn">Absenden!</button>
   </div>
 </form>
