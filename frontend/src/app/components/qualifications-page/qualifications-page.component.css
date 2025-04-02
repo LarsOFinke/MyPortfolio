@@ -54,6 +54,7 @@ li > a {
 
   .custom-wrapper {
     width: fit-content;
+    min-height: 90vh;
   }
 
   .qualifications {
