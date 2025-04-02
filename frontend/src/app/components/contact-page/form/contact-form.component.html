@@ -55,6 +55,22 @@
 
   <div class="row input-box">
     <div class="col-40">
+      <label for="companyName">Unternehmen:</label>
+    </div>
+    <div class="col-60">
+      <input
+        type="text"
+        id="companyName"
+        name="companyName"
+        placeholder="Ihr Unternehmen"
+        required
+        [(ngModel)]="companyName"
+      />
+    </div>
+  </div>
+
+  <div class="row input-box">
+    <div class="col-40">
       <label for="firstName">Vorname:</label>
     </div>
     <div class="col-60">
@@ -87,21 +103,6 @@
 
   <div class="row input-box">
     <div class="col-40">
-      <label for="phone">Telefon:</label>
-    </div>
-    <div class="col-60">
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        placeholder="Optional"
-        [(ngModel)]="phone"
-      />
-    </div>
-  </div>
-
-  <div class="row input-box">
-    <div class="col-40">
       <label for="email">E-Mail:</label>
     </div>
     <div class="col-60">
@@ -118,16 +119,15 @@
 
   <div class="row input-box">
     <div class="col-40">
-      <label for="companyName">Unternehmen:</label>
+      <label for="phone">Telefon:</label>
     </div>
     <div class="col-60">
       <input
-        type="text"
-        id="companyName"
-        name="companyName"
-        placeholder="Ihr Unternehmen"
-        required
-        [(ngModel)]="companyName"
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Optional"
+        [(ngModel)]="phone"
       />
     </div>
   </div>
