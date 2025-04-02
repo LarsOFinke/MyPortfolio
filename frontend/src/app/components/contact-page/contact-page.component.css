@@ -1,4 +1,7 @@
 /* ### CONTACT PAGE ### */
+.bordered {
+  padding: 1rem;
+}
 
 @media (min-width: 1023px) {
   .custom-wrapper {

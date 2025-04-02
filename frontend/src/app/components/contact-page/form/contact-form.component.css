@@ -1,6 +1,8 @@
-.input-box {
-  display: flex;
-  flex-direction: row;
+form label {
+  font-size: 1rem;
+}
+label u {
+  font-size: 0.9rem;
 }
 
 input {
@@ -17,10 +19,22 @@ textarea {
   background-color: var(--dark-navy-blue);
   border: 1px solid var(--grey);
 }
+
+input[type="checkbox"] {
+  padding: 0;
+  margin: auto;
+  height: fit-content;
+}
+
 ::placeholder {
   color: var(--grey);
-  font-size: .9rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: row;
 }
 
 @media (min-width: 768) {
@@ -28,20 +42,4 @@ textarea {
     width: 50%;
     height: 8rem;
   }
-}
-
-.tos {
-  font-size: 1rem;
-}
-input[type="checkbox"] {
-  padding: 0;
-  margin: auto;
-  height: fit-content;
-}
-
-form label {
-  font-size: 1rem;
-}
-label u {
-  font-size: .9rem;
 }
