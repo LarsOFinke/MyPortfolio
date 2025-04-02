@@ -1,4 +1,5 @@
 li {
+  min-width: fit-content;
   width: 100%;
   border: 2px solid var(--grey);
   border-radius: 8px;
@@ -46,7 +47,17 @@ li > a {
 }
 
 @media (min-width: 1023px) {
+  hr {
+    width: 1px;
+    margin: 0 2rem 0 2rem;
+  }
+
   .custom-wrapper {
-    width: 30%;
+    width: fit-content;
+  }
+
+  .qualifications {
+    display: flex;
+    flex-direction: row;
   }
 }
