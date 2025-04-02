@@ -1,0 +1,52 @@
+<div class="centered">
+    <div class="custom-wrapper centered bordered">
+      <h1>Interessiert, was ich bereits gemacht habe?</h1>
+  
+      <hr />
+  
+      @for (project of projects; track project.id) {
+      <div class="projects centered">
+        <h2>
+          <u>{{ project.title }}</u>
+        </h2>
+  
+        <ul class="links">
+          <li>
+            <a
+              [href]="project.websiteLink"
+              target="_blank"
+              [title]="project.websiteTitle"
+              >Link zur Webseite</a
+            >
+          </li>
+  
+          <li>
+            <a
+              [href]="project.gitHubLink"
+              target="_blank"
+              [title]="project.gitHubTitle"
+              >Link zum GitHub-Repository</a
+            >
+          </li>
+        </ul>
+  
+        <div class="description-text">
+          <p>{{ project.descriptionText }}</p>
+        </div>
+      </div>
+  
+      <br class="clearfix" />
+      <hr />
+      }
+  
+      <div>
+        <h2><u>Habe ich Sie überzeugt?</u></h2>
+        <h3>Sie können mich <a href="/contact">hier</a> direkt kontaktieren!</h3>
+        <h3>
+          Noch nicht? Schauen Sie sich auch meine
+          <a href="/qualifications">Qualifikationen</a> an!
+        </h3>
+      </div>
+    </div>
+  </div>
+  

@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { Project } from '../../interfaces/project';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'app-projects-page',
   imports: [],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css',
+  templateUrl: './projects-page.component.html',
+  styleUrl: './projects-page.component.css',
 })
-export class ProjectsComponent {
+export class ProjectsPageComponent {
   projects: Project[] = [
     {
       id: 1,

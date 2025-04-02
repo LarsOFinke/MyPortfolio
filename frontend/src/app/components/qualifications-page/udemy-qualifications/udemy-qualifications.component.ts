@@ -7,7 +7,7 @@ import { UdemyQualification } from '../../../interfaces/udemy-qualification';
   templateUrl: './udemy-qualifications.component.html',
   styleUrls: [
     './udemy-qualifications.component.css',
-    '../qualifications.component.css',
+    '../qualifications-page.component.css',
   ],
 })
 export class UdemyQualificationsComponent {

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './linkedin-qualifications.component.html',
   styleUrls: [
     './linkedin-qualifications.component.css',
-    '../qualifications.component.css',
+    '../qualifications-page.component.css',
   ],
 })
 export class LinkedinQualificationsComponent {

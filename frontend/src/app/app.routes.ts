@@ -1,14 +1,14 @@
 import { Routes } from '@angular/router';
-import { AboutMeComponent } from './components/about-me/about-me.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { QualificationsComponent } from './components/qualifications/qualifications.component';
-import { ImpressumComponent } from './components/impressum/impressum.component';
+import { AboutMePageComponent } from './components/about-me-page/about-me-page.component';
+import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { QualificationsPageComponent } from './components/qualifications-page/qualifications-page.component';
+import { ImpressumPageComponent } from './components/impressum-page/impressum-page.component';
 
 export const routes: Routes = [
-  { path: '', component: AboutMeComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'qualifications', component: QualificationsComponent },
-  { path: 'contact', component: ContactComponent },
-  {path: 'impressum', component: ImpressumComponent}
+  { path: '', component: AboutMePageComponent },
+  { path: 'projects', component: ProjectsPageComponent },
+  { path: 'qualifications', component: QualificationsPageComponent },
+  { path: 'contact', component: ContactPageComponent },
+  {path: 'impressum', component: ImpressumPageComponent}
 ];

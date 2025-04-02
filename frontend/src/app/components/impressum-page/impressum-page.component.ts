@@ -3,12 +3,12 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { currentEnvironment } from '../../../environment/environment';
 
 @Component({
-  selector: 'app-impressum',
+  selector: 'app-impressum-page',
   imports: [],
-  templateUrl: './impressum.component.html',
-  styleUrl: './impressum.component.css',
+  templateUrl: './impressum-page.component.html',
+  styleUrl: './impressum-page.component.css',
 })
-export class ImpressumComponent implements OnInit {
+export class ImpressumPageComponent implements OnInit {
   contactInformation: SafeHtml = '';
 
   constructor(private sanitizer: DomSanitizer) {}

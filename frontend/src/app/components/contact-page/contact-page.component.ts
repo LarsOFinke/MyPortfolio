@@ -3,11 +3,11 @@ import { ContactFormComponent } from './form/contact-form.component';
 
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-contact-page',
   imports: [ContactFormComponent],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css',
+  templateUrl: './contact-page.component.html',
+  styleUrl: './contact-page.component.css',
 })
-export class ContactComponent {
+export class ContactPageComponent {
   
 }
