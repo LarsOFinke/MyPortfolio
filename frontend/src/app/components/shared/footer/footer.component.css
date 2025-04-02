@@ -5,7 +5,11 @@ footer {
   left: 0;
   font-size: 0.9rem;
   width: 100%;
-  background: linear-gradient(var(--dark-blue), var(--navy-blue), var(--dark-blue));
+  background: linear-gradient(
+    var(--dark-blue),
+    var(--navy-blue),
+    var(--dark-blue)
+  );
   border-top: 1px solid gray;
   margin-top: 1.5%;
 }
@@ -16,7 +20,7 @@ p {
 
 a {
   font-size: 0.9rem;
-  margin-left: .25rem;
+  margin-left: 0.25rem;
 }
 
 .info-text {
@@ -44,10 +48,6 @@ a {
 }
 
 @media (min-width: 1023px) {
-  p {
-    font-size: 1rem;
-  }
-
   a {
     font-size: 1rem;
   }

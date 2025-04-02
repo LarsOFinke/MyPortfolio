@@ -1,6 +1,6 @@
 export interface Project {
   id: number;
-  title: string,
+  title: string;
   websiteLink: string;
   websiteTitle: string;
   gitHubLink: string;

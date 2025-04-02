@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-home-logo',
   imports: [],
   templateUrl: './home-logo.component.html',
-  styleUrl: './home-logo.component.css'
+  styleUrl: './home-logo.component.css',
 })
 export class HomeLogoComponent {
-  imageName: string = "logo.png";
+  imageName: string = 'logo.png';
 }
