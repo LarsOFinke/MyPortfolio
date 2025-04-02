@@ -1,3 +1,9 @@
+a {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
 @media (min-width: 1023px) {
   .custom-wrapper {
     width: 40%;

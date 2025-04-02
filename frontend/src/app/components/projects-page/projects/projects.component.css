@@ -10,7 +10,7 @@ p {
   display: none;
 }
 
-.projects a {
+a {
   text-decoration: underline;
   text-align: center;
   font-size: 1rem;
