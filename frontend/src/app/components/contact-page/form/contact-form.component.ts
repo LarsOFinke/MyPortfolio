@@ -36,7 +36,6 @@ export class ContactFormComponent {
       message: this.message,
       tosAccepted: this.tosAccepted,
     };
-    console.log('Contact Form submitting form data: ', payload);
     this.contactService.sendNewContact(payload).subscribe({
       next: (response: any) => {
         this.msg = response.message;
