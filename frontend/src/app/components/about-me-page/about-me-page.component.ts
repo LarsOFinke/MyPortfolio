@@ -23,7 +23,7 @@ export class AboutMePageComponent {
       </p>
 
       <p>
-      Desweiteren hoste ich die Webseiten auf meinem eigenen Server, wodurch ich einen tieferen Einblick in Linux
+      Desweiteren hoste ich die Webseiten auf meinem eigenen Server, wodurch ich einen tieferen Einblick in Linux gewinnen
       und erste Schritte mit NGINX machen konnte und sehr viel über Netzwerktechnik und die Kommunikation vom Frontend
       mit dem Backend gelernt habe.
       </p>
