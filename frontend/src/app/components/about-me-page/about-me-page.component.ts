@@ -34,19 +34,7 @@ export class AboutMePageComponent {
       </p>
 
       <p>
-        Zu meiner Person ist zu sagen, dass ich ein weltoffener und sehr
-        neugieriger Mensch bin, der schon seit jeher ein ausgeprägtes Interesse
-        im Bereich Technik hat.
-      </p>
-
-      <p>
-        Bereits in meiner Kindheit hatte ich steten Kontakt mit Computern &
-        Konsolen und bin bis heute sehr aktiv in der Online-Szene unterwegs,
-        verbringe quasi jede freie Minute am PC.
-      </p>
-
-      <p>
-        Ich verfüge über sehr gute Englischkenntnisse, besitze ein ausgeprägtes
+        Außerdem verfüge ich über sehr gute Englischkenntnisse, besitze ein ausgeprägtes
         logisches Denken, eine zumeist schnelle Auffassungsgabe und ein sehr
         hohes Maß an Eigeninitiative, wenn es darum geht etwas Neues zu erlernen
         oder ein Problem zu lösen.
