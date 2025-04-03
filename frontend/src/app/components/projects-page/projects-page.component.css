@@ -4,7 +4,15 @@ a {
   font-size: 1.15rem;
 }
 
+#projects-page {
+  height: 87vh;
+}
+
 @media (min-width: 1023px) {
+  #projects-page {
+    height: 85vh;
+  }
+
   .custom-wrapper {
     width: 40%;
   }
