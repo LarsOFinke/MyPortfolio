@@ -23,6 +23,12 @@ export class AboutMePageComponent {
       </p>
 
       <p>
+      Desweiteren hoste ich die Webseiten auf meinem eigenen Server, wodurch ich einen tieferen Einblick in Linux
+      und erste Schritte mit NGINX machen konnte und sehr viel über Netzwerktechnik und die Kommunikation vom Frontend
+      mit dem Backend gelernt habe.
+      </p>
+
+      <p>
       Insgesamt konnte ich durch meine Projekte einen ersten Einblick in das Berufsfeld eines Software Developers gewinnen 
       und hoffe durch das Praktikum, und die Umschulung im Gesamten, dort mein "neues Zuhause" zu finden.
       </p>
