@@ -18,6 +18,8 @@ textarea {
   height: 5rem;
   background-color: var(--dark-navy-blue);
   border: 1px solid var(--grey);
+  color: var(--light-grey);
+  font-weight: 600;
 }
 
 input[type="checkbox"] {

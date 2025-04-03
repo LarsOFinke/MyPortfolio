@@ -42,8 +42,7 @@ export class ContactFormComponent {
         this.msg = response.message;
         if (response.success) {
           this.success = true;
-        } else {
-          this.error = true;
+          this.clearInputFields();
         }
       },
       error: (error) => {
@@ -51,7 +50,6 @@ export class ContactFormComponent {
         this.msg = 'Kontaktformular konnte nicht verarbeitet werden!';
       },
     });
-    this.clearInputFields();
   }
 
   clearInputFields() {
