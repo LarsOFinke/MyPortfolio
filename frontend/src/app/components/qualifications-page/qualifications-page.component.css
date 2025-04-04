@@ -10,6 +10,12 @@ li > a {
   font-size: 1.1rem;
 }
 
+#contact-link-container a {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
 .qualification-list {
   padding: 0;
   width: 80%;
@@ -47,11 +53,6 @@ li > a {
 }
 
 @media (min-width: 1023px) {
-  hr {
-    width: 1px;
-    margin: 0 2rem 0 2rem;
-  }
-
   .custom-wrapper {
     width: fit-content;
     min-height: 77vh;

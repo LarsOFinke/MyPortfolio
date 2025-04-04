@@ -44,9 +44,6 @@ body {
   color: var(--grey);
   font-family: "Franklin Gothic Medium", "Roboto", Arial, sans-serif;
 }
-hr {
-  width: 100%;
-}
 h1,
 h2,
 h3,
