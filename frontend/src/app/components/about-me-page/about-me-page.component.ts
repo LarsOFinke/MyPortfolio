@@ -18,8 +18,7 @@ export class AboutMePageComponent {
 
       <p>
       Ich bin demnach mit den Grundlagen von HTML, CSS und JavaScript vertraut und habe mittlerweile sogar 
-      auf Angular (TypeScript) umgebaut, um einen Einblick in die professionelle Entwicklung zu bekommen 
-      und mich an die Projektstruktur zu gewöhnen.
+      auf Angular (TypeScript) umgebaut, um mich in die professionelle Softwareentwicklung und Softwarearchitektur einzuarbeiten.
       </p>
 
       <p>

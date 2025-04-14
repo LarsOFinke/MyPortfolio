@@ -109,10 +109,10 @@ a:visited {
   margin: 2%;
 }
 .btn {
-  background-color: var(--navy-blue);
-  color: var(--grey);
+  background-color: var(--gold);
+  color: var(--light-navy-blue);
 
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: bold;
 
   margin: 2%;
