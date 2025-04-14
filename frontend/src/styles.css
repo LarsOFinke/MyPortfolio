@@ -109,8 +109,8 @@ a:visited {
   margin: 2%;
 }
 .btn {
-  background-color: var(--gold);
-  color: var(--light-navy-blue);
+  background-color: var(--navy-blue);
+  color: var(--grey);
 
   font-size: 1.25rem;
   font-weight: bold;
