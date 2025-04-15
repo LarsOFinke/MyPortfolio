@@ -1,5 +1,5 @@
 form label {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 label u {
   font-size: 0.9rem;
@@ -32,6 +32,10 @@ input[type="checkbox"] {
   color: var(--grey);
   font-size: 0.9rem;
   font-weight: 500;
+}
+
+.btn {
+  font-size: 1rem;
 }
 
 .input-box {

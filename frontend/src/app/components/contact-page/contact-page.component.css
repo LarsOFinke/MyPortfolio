@@ -1,16 +1,8 @@
-/* ### CONTACT PAGE ### */
-#contact-form {
-  height: 86vh;
-}
-
 .bordered {
   padding: 1rem;
 }
 
 @media (min-width: 1023px) {
-  #contact-form {
-    height: 77vh;
-  }
   .custom-wrapper {
     width: 40%;
   }
